@@ -47,21 +47,7 @@ function sign(payload,SecretKey){
         const token =encoded_header + "." + encoded_payload + "." + signature
 
 
-        //DECODING
-
-        // const dhead=Buffer                                                  //buffer is a built in fxn used for decoding
-        //         .from(encoded_header,"base64url")
-        //         .toString("utf8");                                          //base64url converts encoded header in bytes and we can 
-        // const dobj =JSON.parse(dhead)                                        // convert those bytes to readable text usinf utf8
-        // console.log("decoded header".dobj)
-
-
-        // const dpayload=Buffer
-        //         .from(encoded_payload,"base64url")
-        //         .toString("utf8");
-        // const dobjpay =JSON.parse(dpayload)
-           
-        // console.log("Decoded payload",dobjpay)
+  
 
 
         return  token                                                                    //returning the final JWT
